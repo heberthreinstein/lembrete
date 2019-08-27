@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Novo Lembrete</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label [(ngModel)]="lembrete.titulo" position="floating">Titulo</ion-label>
+    <ion-input required></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label [(ngModel)]="lembrete.descricao" position="floating">Descrição</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Quer ser avisado?  </ion-label>
+    <ion-datetime [(ngModel)]="lembrete.data" placeholder="Quando?" display-format="DD.MM.YYYY HH:mm"></ion-datetime>
+  </ion-item>
+  <ion-button (click)="cadastrar()">
+    <ion-icon slot="start" name="checkmark"></ion-icon>
+    Gravar
+  </ion-button>
+</ion-content>

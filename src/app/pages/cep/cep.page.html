@@ -15,11 +15,13 @@
 <ion-card *ngIf="result">
   <ion-card-header>
     <ion-card-subtitle>{{result.cep}}</ion-card-subtitle>
-    <ion-card-title>{{result.localidade}}</ion-card-title>
+    <ion-card-title>{{result.localidade}} - {{result.uf}}</ion-card-title>
   </ion-card-header>
-  <ion-card-content>
-    {{result.uf}}
-  </ion-card-content>
+    <ion-button href="previsao/{{result.localidade}}">
+      <ion-icon slot="start" name="cloud"></ion-icon>
+      Previsão do tempo
+    </ion-button>
+
 </ion-card>
 
 </ion-content>

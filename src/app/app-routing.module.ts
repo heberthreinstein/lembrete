@@ -7,6 +7,7 @@ const routes: Routes = [
   { path: 'cadastro', loadChildren: './pages/cadastro/cadastro.module#CadastroPageModule' },
   { path: 'listar', loadChildren: './pages/listar/listar.module#ListarPageModule' },
   { path: 'cep', loadChildren: './pages/cep/cep.module#CepPageModule' },
+  { path: 'previsao/:cidade', loadChildren: './pages/previsao/previsao.module#PrevisaoPageModule' },
 ];
 
 @NgModule({

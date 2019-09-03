@@ -6,6 +6,7 @@ const routes: Routes = [
   { path: 'inicio', loadChildren: './pages/inicio/inicio.module#InicioPageModule' },
   { path: 'cadastro', loadChildren: './pages/cadastro/cadastro.module#CadastroPageModule' },
   { path: 'listar', loadChildren: './pages/listar/listar.module#ListarPageModule' },
+  { path: 'cep', loadChildren: './pages/cep/cep.module#CepPageModule' },
 ];
 
 @NgModule({

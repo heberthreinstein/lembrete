@@ -7,7 +7,7 @@
 <ion-content>
   <form (submit)="buscaCep()">
   <ion-item>
-    <ion-input slot="start" type="search" name="cep" [(ngModel)]="cep"></ion-input>
+    <ion-input slot="start" type="number" name="cep" [(ngModel)]="cep"></ion-input>
     <ion-icon (click)="buscaCep()" slot="end" name="search"></ion-icon>
   </ion-item>
 </form>
